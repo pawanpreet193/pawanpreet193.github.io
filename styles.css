@@ -1,6 +1,6 @@
 /* Add your custom CSS styles here */
 
-@media (max-width: 600px ){ body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -33,5 +33,5 @@ main {
 .pro{
 border-radius: 10px;
 align-right: 400px ;}
-    }
+    
 
