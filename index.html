@@ -2,28 +2,437 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor</title>
 </head>
-<body>
-    <header>
-        <h1>My First website</h1>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="school.html">Schooling</a></li>
-                <li><a href="extra.html">Extra Curriculars</a></li>
-                <li><a href="contact.html">Contact</a><li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <h2>Pawanpreet Singh</h2>
-        <img class="pro" src=" IMG_20230613_171018.jpg" width=" 200px" height=" 200px">
-    </main>
+<style> 
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+}
+.logo{
+    position: absolute;
+    width:198px;
+    height:28px;
+    padding: 0.5% 0 1% 1%;
+}
 
-    <script src="script.js"></script>
+header{
+    background-color: #3e54ae;
+}
+.banner{
+    text-align: center;
+    margin : 0px 0px 5px 0px;
+    font-weight: 550;
+    background-color: #3e54ae;
+    color: white ;
+    padding: 5px ;
+}
+a { 
+    color: white;
+}
+nav{
+    position: absolute;
+    left: 0;
+
+}
+.bar{
+    color : black;
+    padding: 5px;
+    text-decoration: none;
+
+}
+.left-nav {
+    padding : 0.5% 0  0 50%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+.githublogo{
+    height: 15px ;
+    width: 15px;
+    border-radius: 7.5px;
+
+}
+button{
+    justify-content: center;
+    border-color: black;
+    background-color: black;
+    color: white;
+    border-radius: 200px;
+    font-size: 15px;
+    font-weight: 500;
+    vertical-align: -webkit-baseline-middle;
+    height: fit-content;
+}
+
+.git{
+    text-decoration: none;
+}
+.top
+{
+    padding-left: 10% ;
+    border-left: 1px solid #dbe5e6;
+    height: 25px ;
+    margin : 0px ;
+    font-weight: bold;
+    
+}
+hr{
+    color: #dbe5e6;
+}
+.start{
+    border: 2px solid #dbe5e6;
+    margin-left: 8%;
+    margin-top: 4%;
+    margin-right: 10%;
+    border-radius: 7px;
+    padding: 1%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+
+}
+.line {
+    color: black;
+    background-color: #e7ebf9;
+    color:#3e54ae;
+    border: 1px solid #e7ebf9;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.xtra{
+    margin-top: 5%;
+    margin-left: 2%;
+    font-size: 13px;
+    color: #6abecd;
+    background-color: white;
+    border: white;
+    font-weight: bold;
+}
+.c{
+    margin-top: 5%;
+    margin-left: 2%;
+    font-size: 13px;
+    color: #3e54ae;
+    background-color: white;
+    border: white;
+    font-weight: bold;
+}
+.newbee{
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 13px;
+    color: #6abecd;
+    background-color: white;
+    border: 2px solid #6abecd;
+    font-weight: bold;
+    
+
+}
+.title{
+    width: 50%;
+    padding-left: 4%;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.content{
+    width: 50%;
+    padding-left: 4%;
+    font-size: 1rem;
+    color: #737380;
+}
+.red{
+    padding: 1%;
+    margin: 2% 0% 0% 10%;
+    font-style: italic;
+    background-color: #bc102a;
+    border: #bc102a;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.red:hover{
+    background-color: #e74c3c;
+}
+.view{
+    width: 30%;
+    height: 35%;
+    padding-left: 60%;
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    right: 15%
+    
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-left: 8%;
+    margin-top: 5%;
+    gap: 4%;
+    margin:8%;
+}
+.left-container {
+    border: 2px solid #dbe5e6;
+    border-radius: 7px;
+    padding: 4% 4% 8% 4%;
+    }
+
+.left-container a{
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+    .right-container {
+    border: 2px solid #dbe5e6;
+    border-radius: 7px;
+    padding: 4% 4% 8% 4%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    line-height: 1.6;
+
+    }
+.title2{
+    
+    font-size: 1.6rem;
+    font-weight: 500;
+   
+}
+
+mark{
+    background-color: #dbe5e6;
+}
+ 
+.item2{
+    border: 2px solid #dbe5e6;
+    border-radius: 7px;
+    padding: 4% 4% 8% 4%;
+}
+.right-container a{
+    color: black;
+}
+.green-tick{
+    color: #00db98;
+    font-weight:bold;
+}
+
+h3{
+    text-align: center;
+}
+.faq{
+    margin: 8% 20% 5% 30%;
+    width: 40%;
+    justify-content: center;
+}
+.drop{
+    border : 1px solid #dbe5e6;
+   margin-top: 12px;
+    border-radius: 7px;
+    padding : 4%;
+}
+.drop-text{
+    color:#737380;
+    line-height: 1.6;
+
+}
+.sub-footer{
+    background-color: #3e54ae;
+    height:auto;
+    width: 85%;
+    margin: 4% 5% 4% 5%;
+    border-radius: 7px;
+    color:white;
+    text-align: center;
+    padding : 2%;
+}
+.discord{
+    width: 90%;
+    height: 50%;
+    z-index: 1;
+    transform: rotate(1050deg);
+}
+.sub-foot-text{
+   width: 50%;
+   padding: 0 10% 0 10%;
+   text-align: center;
+   line-height: 1.4;
+}
+.join{
+    background-color: white;
+    color:#3e54ae;
+    padding: 1%;
+    font-weight: bold;
+    border : 1px solid white;
+    margin-top: 20px;
+}
+.foot{
+    margin-top: 8%;
+}
+.photo{
+    margin-left: 500px;
+}
+</style>
+<body>
+    <header><div class="banner">Looking to Hire Developers? <a href ="#" >Visit our Hiring Platform</a></div></header>
+    <a href="#"><img src="logo-desktop.svg" class="logo"></a>
+    <nav class="left-nav">
+        <a href="#" class =" bar">CHALLENGES</a>
+        <a href="#" class =" bar">SOLUTIONS</a>
+        <a href="#" class =" bar">ARTICLES</a>
+        <a href="#" class =" bar">RESOURCES</a>
+        <a href="#" class =" bar">UNLOCK PRO</a>
+        <button><a href= "#" class="git">Log in with Github <img src= "download.png" class ="githublogo"></a></button>
+    </nav>
+    <br>
+    <br>
+    <hr>
+    <p class="top"><vr>CHALLENGE</vr></p>
+    <hr>
+    <div class = "start">
+       <button class = "line">FREE</button>
+       <button class="xtra">HTML</button>
+        <button class="c">CSS</button>
+        <button class="newbee">1. NEWBEE</button><br>
+        <p class="title">Product preview card component</p>
+        <p class="content">This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.</p>
+        <button class="red"><strong>START CHALLENGE  &lt / &gt</strong> </button>
+        <div class="card"><img src="image.webp" class="view"></div>
+    </div>
+    <div class="grid-container">
+        <div class="left-container">
+          <p>
+          <span><img src="images.jpeg" width="30px" height="30px" > </span>
+          <span class="title2">Brief</span>
+
+          </p>
+
+          <p>Your challenge is to build out this product preview card component and get it looking as close to the design as possible.<br><br>
+
+            You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.<br><br>
+            
+            Your users should be able to:<br><br>
+            <ul>
+            <li>View the optimal layout depending on their device's screen size.</li><br>
+           <li> See hover and focus states for interactive elements
+            </li>
+           </ul>
+            Download the project and go through the <mark>README.md</mark> file. This will provide further details about the project and help you get set up.<br><br>
+            
+            Want some support on the challenge? <a href="#">Join our community</a> and ask questions in the help channel.</p>
+        </div>
+       
+        
+        <div class="right-container">
+            <p class="title2">Assests</p>
+            <p class="red-cross">&#10060; Sketch and sigma design file access. - <a href="#"><strong>Unlock with Pro</strong></a></p>
+            <p>
+                <span class="green-tick">&#10004;</span>
+                <span>JPEG design files for mobile & desktop layouts.</span>
+            </p>
+            <p>
+                <span class="green-tick">&#10004;</span>
+                <span>Style guide for fonts, colors, etc.</span>
+            </p>
+            <p>
+                <span class="green-tick">&#10004;</span>
+                <span>Optimized image assets</span>
+            </p>
+            <p>
+                <span class="green-tick">&#10004;</span>
+                <span>README file to help you get started</span>
+            </p>
+            <p>
+                <span class="green-tick">&#10004;</span>
+                <span>HTML file with pre-written content</span>
+            </p>
+        </div>
+        <div class="right-container">
+            <p> 
+                <span>
+                    <img src="pngtree-shining-bright-light-bulb-png-image_6136095.png" width="50px" height="50px">
+                </span>
+                <span class="title2">Ideas to test yourself</span>
+                <ol>
+                    <li>Write your styles using a pre-processor, such as <a href="#">Sass</a>, <a href="#">Less </a>or <a href="#">Stylus </a></li><br>
+                    <li>Train your eye for detail by getting your solution as close to the design as you can</li><br>
+                    <li>Try estimating the time it will take for you to build the project. Then see if the time taken matches up to your estimate. Project estimations are a skill that is often overlooked but is essential for professional developers</li><br>
+                </ol>
+            </p>
+        </div>
+    </div>
+    <div class="faq">
+        <h3>CHALLENGE FAQs</h3>
+        <br>
+        <div class="drop">
+        <details>
+            <summary><strong>How can I get help if I'm stuck on a challenge?</strong></summary>
+            <p class="drop-text">The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord server here..</p>
+          </details>
+        </div>
+        <div class="drop">
+            <details>
+                <summary><strong>How do I submit my solution?</strong></summary>
+                <p class="drop-text">We'd recommend reading our complete guide to submitting solutions . If you get stuck and need help, please feel free to ask questions in our Discord server, and we'll help you submit your project.</p>
+              </details>
+        </div>
+        <div class="drop">
+                <details>
+                    <summary><strong>Is there an official solution I can take a look at?</strong></summary>
+                    <p class="drop-text">We don't provide "official" solutions for the challenges. This is because there is no single perfect way to complete a challenge. Instead, you're encouraged to review other people's code in the community. You can learn so much by seeing how other people have approached the same challenges and giving them feedback.</p>
+                  </details>
+        </div>
+        <div class="drop">
+            <details>
+                <summary><strong>Can I use libraries/frameworks on these projects?</strong></summary>
+                <p class="drop-text">The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord server here..</p>
+              </details>
+            </div>
+        <div class="drop">
+                <details>
+                    <summary><strong>Can I use these projects in my portfolio?</strong></summary>
+                    <p class="drop-text">The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord server here..</p>
+                  </details>
+         </div>
+         <div class="drop">
+            <details>
+                <summary><strong>What is the difference between the desktop-design, mobile-design, and desktop-preview images in my starter code?</strong></summary>
+                <p class="drop-text">The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord server here..</p>
+              </details>
+        </div>
+        <div class="drop">
+            <details>
+                <summary><strong>Can I use these challenges within my own free or commercial content/tutorials/projects?</strong></summary>
+                <p class="drop-text">The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel! If you haven't joined yet, you can get an invite to our Discord server here..</p>
+              </details>
+        </div>
+        
+          
+    </div>
+    <div class="sub-footer">
+        <!--<span class="discord"><img src="png-image.png" class="discord"></span>-->
+        <p >
+            <span><img src="pngfind.com-discord-icon-png-283551.png" width="35px" height="30px"> </span>
+            <span class="title2"><strong>Discord</strong></span>
+            <h4>JOIN OUR DISCORD COMMUNITY</h4>
+            <span class="title2 sub-foot-text">Join thousands of Frontend Mentor community members taking the challenges, sharing resources, helping each other, and chatting about all things front-end!</span><br>
+
+            <button class="join">JOIN OUR DISCORD</button>
+        </p>
+    </div>
+    <div class="foot">
+          <a href="#"><img src="logo-desktop.svg" class="logo"></a>
+        <nav class="left-nav">
+            <a href="#" class="photo"><img src="Screenshot 2024-01-06 211956.png" height="40px"></a>
+            
+                    </nav>
+    </div>
+    
+    
 </body>
 </html>
-
